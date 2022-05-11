@@ -13,27 +13,6 @@ body {
 }
 /*  global styles^ */
 
-h1 {
-  font-size: 2.6rem;
-}
-li,
-button,
-label,
-input,
-p {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 4.8rem;
-}
-h3 {
-  font-size: 3rem;
-  font-weight: normal; /* normal=400  */
-}
-h4,
-h5 {
-  font-size: 2.8rem;
-}
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
@@ -41,8 +20,6 @@ a {
 }
 /* global style */
 .main-hero {
-  background-color: #55363623;
-  position: sticky;
   top: 0px;
   z-index: 4;
 }
@@ -51,9 +28,8 @@ nav {
   display: flex;
   width: 90%;
   margin: auto;
-  padding: 2rem;
+  padding: 6rem 0rem;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 li {
@@ -64,21 +40,100 @@ a {
 }
 nav ul {
   display: flex;
-  flex: 1 1 20rem;
+  flex: 1 1 30rem;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
+nav a {
+  text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+}
 #logo {
-  flex: 4 1 40rem;
+  flex: 3 1 40rem;
 }
 .sign-up {
-  color: pink;
+  color: #ff3998;
 }
 
 /* features */
 #features {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 #features h4 {
   color: #ff3998;
+  margin-top: 10rem;
+  font-size: calc(2rem + 0.5vw);
+}
+#features h1 {
+  padding: 2rem 0rem;
+  font-size: calc(15rem + 1vw);
+  font-weight: 900;
+}
+#features p {
+  font-size: calc(2.5rem + 0.5vw);
+  margin: 2rem 0;
+}
+#features button {
+  padding: 5rem 13rem;
+  border-radius: 10rem;
+  font-size: 1rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(36deg, #ff497e, #ff8039, #c5b169);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+}
+#features button a {
+  font-size: calc(1.4rem + 1vh);
+  font-weight: 700;
+}
+
+#features .features-text {
+  flex: 1 1 40rem;
+}
+#features .features-img {
+  flex: 1 1 20rem;
+  height: auto;
+  width: auto;
+}
+/* ABOUT SECTION */
+
+#about {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#about .main-text {
+  background-image: url(./img/background.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  border-radius: 5rem;
+  display: flex;
+  align-items: flex-end;
+}
+.text {
+  justify-content: flex;
+}
+#about h1 {
+  margin: 5rem;
+  font-size: calc(4rem + 1vw);
+}
+#about p {
+  margin: 5rem;
+  font-size: calc(1rem + 1vw);
+}
+#about .sponsors {
 }
