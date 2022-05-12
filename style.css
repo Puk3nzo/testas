@@ -13,47 +13,19 @@ body {
 }
 /*  global styles^ */
 
-h1 {
-  font-size: 2.6rem;
-}
-li,
-button,
-label,
-input,
-p {
-  font-size: 2rem;
-}
-h2 {
-  font-size: 4.8rem;
-}
-h3 {
-  font-size: 3rem;
-  font-weight: normal; /* normal=400  */
-}
-h4,
-h5 {
-  font-size: 2.8rem;
-}
 a {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 1rem;
 }
 /* global style */
-.main-hero {
-  background-color: #55363623;
-  position: sticky;
-  top: 0px;
-  z-index: 4;
-}
 nav {
   min-height: 10vh;
   display: flex;
   width: 90%;
   margin: auto;
-  padding: 2rem;
+  padding: 6rem 0rem;
   align-items: center;
-  flex-wrap: wrap;
   justify-content: space-between;
 }
 li {
@@ -64,21 +36,267 @@ a {
 }
 nav ul {
   display: flex;
-  flex: 1 1 20rem;
+  flex: 1 1 30rem;
   justify-content: space-around;
   align-items: center;
   list-style: none;
 }
+nav a {
+  text-decoration: none;
+  font-size: calc(0.5rem + 1vw);
+}
 #logo {
-  flex: 4 1 40rem;
+  flex: 3 1 40rem;
 }
 .sign-up {
-  color: pink;
+  color: #ff3998;
 }
 
 /* features */
 #features {
+  min-height: 70vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 #features h4 {
   color: #ff3998;
+  margin-top: 10rem;
+  font-size: calc(2rem + 0.5vw);
+}
+#features h1 {
+  padding: 2rem 0rem;
+  font-size: calc(4rem + 2vh);
+  font-weight: 900;
+}
+#features p {
+  font-size: calc(2rem + 0.5vw);
+  margin: 2rem 0;
+}
+#features button {
+  padding: 5rem 13rem;
+  border-radius: 10rem;
+  font-size: 1rem;
+  box-shadow: 0 0 6px 0 rgba(157, 96, 212, 0.5);
+  border: solid 3px transparent;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0),
+      rgba(255, 255, 255, 0)
+    ),
+    linear-gradient(36deg, #ff497e, #ff8039, #c5b169);
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  box-shadow: 2px 1000px 1px #fff inset;
+  margin-bottom: 30rem;
+}
+#features button a {
+  font-size: calc(1.4rem + 1vh);
+  font-weight: 700;
+}
+
+#features .features-text {
+  flex: 2 1 40rem;
+}
+#features .features-img {
+  flex: 1 1 90rem;
+  height: auto;
+  width: 20%;
+}
+#features .feat-img {
+  width: 1200px;
+  height: auto;
+  margin-right: 1rem;
+}
+#features .img11 {
+  width: 35rem;
+}
+/* ABOUT SECTION */
+
+#about {
+  min-height: 100vh;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+#about .main-text {
+  background-image: url(./img/background.svg);
+  background-size: cover;
+  background-position: center;
+  min-height: 40vh;
+  border-radius: 5rem;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+#about h1 {
+  margin: 5rem;
+  font-size: calc(5rem + 1vw);
+}
+#about p {
+  margin: 5rem;
+  font-size: calc(1rem + 1vw);
+}
+#about .sponsors {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem;
+  flex-wrap: wrap;
+}
+#about .nft-gallery a {
+  font-size: calc(1rem + 1vw);
+  text-decoration: underline;
+}
+
+/* nft item list */
+#about .merchandise {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+#about .merchandise .grey {
+  background-color: #eeeeee;
+  width: 29rem;
+  height: 10vh;
+  margin-bottom: 5rem;
+  border-radius: 0 0 2rem 2rem;
+}
+#about .nft-item {
+  display: flex;
+  flex-direction: column;
+}
+#about .nft-item img {
+  width: 29rem;
+  height: auto;
+}
+#about .nft-header,
+.nft-main,
+.nft-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #a4a4a4;
+  width: 90%;
+  margin: 1rem 0 1rem 1rem;
+  font-size: 2.8rem;
+}
+#about .nft-header .orange {
+  color: #fe8744;
+}
+#about .nft-main {
+  color: black;
+}
+#about .nft-main img {
+  width: 1.8rem;
+  height: 2rem;
+}
+/* footer */
+#footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.img1 {
+  flex: 1 1 30rem;
+}
+
+#footer .social img {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+#footer h1 {
+  margin: 2rem 2rem;
+}
+#footer .box1 {
+  flex: 1 1 40rem;
+}
+#footer .box2 {
+  display: flex;
+  flex: 1 1 35rem;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+#footer ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+#footer li {
+  margin: 1rem;
+}
+#footer a {
+  font-size: 1.8rem;
+}
+
+.border {
+  border-top: 3px #eeeeee solid;
+  border-bottom: 3px #eeeeee solid;
+}
+#footer {
+  margin-top: 10rem;
+}
+.real-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+  height: 5vh;
+  color: #999999;
+  font-size: 3rem;
+}
+/* media bad */ /* me no like */
+@media screen and (max-width: 717px) {
+  html {
+    font-size: 45%;
+  }
+  .gone {
+    display: none;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .overflow {
+    max-width: 138px;
+    overflow: hidden;
+  }
+  #footer {
+    position: relative;
+    margin-bottom: 35rem;
+  }
+  .box2 {
+    align-items: flex-end;
+    position: absolute;
+    left: 0%;
+    top: 15rem;
+  }
+  .boxes {
+    width: 34%;
+  }
+  .test {
+    flex-wrap: nowrap;
+  }
+  #features button {
+    padding: 3rem 7rem;
+  }
+  .BOXBIG {
+    width: 50%;
+  }
+  #about .main-text {
+    background-image: url(./img/background.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 18vh;
+    border-radius: 5rem;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .features-img {
+    overflow: hidden;
+  }
 }
