@@ -19,10 +19,7 @@ a {
   font-size: 1rem;
 }
 /* global style */
-.main-hero {
-  top: 0px;
-  z-index: 4;
-}
+
 nav {
   min-height: 10vh;
   display: flex;
@@ -62,6 +59,7 @@ nav a {
   width: 90%;
   margin: auto;
   display: flex;
+  flex-wrap: wrap;
 }
 #features h4 {
   color: #ff3998;
@@ -92,6 +90,7 @@ nav a {
   background-origin: border-box;
   background-clip: content-box, border-box;
   box-shadow: 2px 1000px 1px #fff inset;
+  margin-bottom: 30rem;
 }
 #features button a {
   font-size: calc(1.4rem + 1vh);
@@ -99,12 +98,12 @@ nav a {
 }
 
 #features .features-text {
-  flex: 1 1 40rem;
+  flex: 2 1 40rem;
 }
 #features .features-img {
   flex: 1 1 20rem;
   height: auto;
-  width: auto;
+  width: 100%;
 }
 /* ABOUT SECTION */
 
@@ -123,6 +122,7 @@ nav a {
   border-radius: 5rem;
   display: flex;
   align-items: flex-end;
+  flex-wrap: wrap;
 }
 .text {
   justify-content: flex;
@@ -136,4 +136,109 @@ nav a {
   font-size: calc(1rem + 1vw);
 }
 #about .sponsors {
+  display: flex;
+  justify-content: space-between;
+  margin: 10rem;
+}
+#about .nft-gallery a {
+  font-size: calc(1rem + 1vw);
+  text-decoration: underline;
+}
+
+/* nft item list */
+#about .merchandise {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+}
+#about .merchandise .grey {
+  background-color: #eeeeee;
+  width: 29rem;
+  height: 10vh;
+  margin-bottom: 5rem;
+  border-radius: 0 0 2rem 2rem;
+}
+#about .nft-item {
+  display: flex;
+  flex-direction: column;
+}
+#about .nft-item img {
+  width: 29rem;
+  height: 27.8rem;
+}
+#about .nft-header,
+.nft-main,
+.nft-footer {
+  display: flex;
+  justify-content: space-between;
+  color: #a4a4a4;
+  width: 90%;
+  margin: 1rem 0 1rem 1rem;
+  font-size: 2.8rem;
+}
+#about .nft-header .orange {
+  color: #fe8744;
+}
+#about .nft-main {
+  color: black;
+}
+#about .nft-main img {
+  width: 1.8rem;
+  height: 2rem;
+}
+/* footer */
+#footer {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+#footer .social img {
+  height: 2rem;
+  width: 2rem;
+  margin: 1rem;
+}
+#footer h1 {
+  margin: 2rem 2rem;
+}
+#footer .box1 {
+  flex: 1 1 40rem;
+}
+#footer .box2 {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-between;
+  width: 90%;
+  flex-wrap: wrap;
+}
+#footer ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+#footer li {
+  margin: 1rem;
+}
+#footer a {
+  font-size: 1.8rem;
+}
+#features .img11 {
+  width: 35rem;
+}
+.border {
+  border-top: 3px #eeeeee solid;
+  border-bottom: 3px #eeeeee solid;
+}
+#footer {
+  margin-top: 10rem;
+}
+.real-footer {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+  height: 5vh;
+  color: #999999;
+  font-size: 3rem;
 }
