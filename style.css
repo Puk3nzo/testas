@@ -19,7 +19,6 @@ a {
   font-size: 1rem;
 }
 /* global style */
-
 nav {
   min-height: 10vh;
   display: flex;
@@ -104,6 +103,7 @@ nav a {
   flex: 1 1 20rem;
   height: auto;
   width: 100%;
+  width: auto;
 }
 /* ABOUT SECTION */
 
