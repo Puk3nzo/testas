@@ -58,7 +58,6 @@ nav a {
   width: 90%;
   margin: auto;
   display: flex;
-  flex-wrap: wrap;
 }
 #features h4 {
   color: #ff3998;
@@ -67,11 +66,11 @@ nav a {
 }
 #features h1 {
   padding: 2rem 0rem;
-  font-size: calc(15rem + 1vw);
+  font-size: calc(4rem + 2vh);
   font-weight: 900;
 }
 #features p {
-  font-size: calc(2.5rem + 0.5vw);
+  font-size: calc(2rem + 0.5vw);
   margin: 2rem 0;
 }
 #features button {
@@ -100,10 +99,17 @@ nav a {
   flex: 2 1 40rem;
 }
 #features .features-img {
-  flex: 1 1 20rem;
+  flex: 1 1 90rem;
   height: auto;
-  width: 100%;
-  width: auto;
+  width: 20%;
+}
+#features .feat-img {
+  width: 1200px;
+  height: auto;
+  margin-right: 1rem;
+}
+#features .img11 {
+  width: 35rem;
 }
 /* ABOUT SECTION */
 
@@ -124,12 +130,9 @@ nav a {
   align-items: flex-end;
   flex-wrap: wrap;
 }
-.text {
-  justify-content: flex;
-}
 #about h1 {
   margin: 5rem;
-  font-size: calc(4rem + 1vw);
+  font-size: calc(5rem + 1vw);
 }
 #about p {
   margin: 5rem;
@@ -139,6 +142,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   margin: 10rem;
+  flex-wrap: wrap;
 }
 #about .nft-gallery a {
   font-size: calc(1rem + 1vw);
@@ -150,6 +154,7 @@ nav a {
   display: flex;
   justify-content: space-between;
   width: 90%;
+  flex-wrap: wrap;
 }
 #about .merchandise .grey {
   background-color: #eeeeee;
@@ -164,7 +169,7 @@ nav a {
 }
 #about .nft-item img {
   width: 29rem;
-  height: 27.8rem;
+  height: auto;
 }
 #about .nft-header,
 .nft-main,
@@ -193,6 +198,9 @@ nav a {
   margin: auto;
   flex-wrap: wrap;
 }
+.img1 {
+  flex: 1 1 30rem;
+}
 
 #footer .social img {
   height: 2rem;
@@ -207,7 +215,7 @@ nav a {
 }
 #footer .box2 {
   display: flex;
-  flex: 1 1 40rem;
+  flex: 1 1 35rem;
   justify-content: space-between;
   width: 90%;
   flex-wrap: wrap;
@@ -222,9 +230,7 @@ nav a {
 #footer a {
   font-size: 1.8rem;
 }
-#features .img11 {
-  width: 35rem;
-}
+
 .border {
   border-top: 3px #eeeeee solid;
   border-bottom: 3px #eeeeee solid;
@@ -241,4 +247,56 @@ nav a {
   height: 5vh;
   color: #999999;
   font-size: 3rem;
+}
+/* media bad */ /* me no like */
+@media screen and (max-width: 717px) {
+  html {
+    font-size: 45%;
+  }
+  .gone {
+    display: none;
+  }
+  .boxes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .overflow {
+    max-width: 138px;
+    overflow: hidden;
+  }
+  #footer {
+    position: relative;
+    margin-bottom: 35rem;
+  }
+  .box2 {
+    align-items: flex-end;
+    position: absolute;
+    left: 0%;
+    top: 15rem;
+  }
+  .boxes {
+    width: 34%;
+  }
+  .test {
+    flex-wrap: nowrap;
+  }
+  #features button {
+    padding: 3rem 7rem;
+  }
+  .BOXBIG {
+    width: 50%;
+  }
+  #about .main-text {
+    background-image: url(./img/background.svg);
+    background-size: cover;
+    background-position: center;
+    min-height: 18vh;
+    border-radius: 5rem;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  .features-img {
+    overflow: hidden;
+  }
 }
